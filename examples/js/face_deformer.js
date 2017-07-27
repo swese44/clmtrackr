@@ -291,3 +291,4 @@ var faceDeformer = function() {
 		return positions;
 	}
 }
+window.faceDeformer = faceDeformer;

@@ -321,13 +321,13 @@ if (typeof exports === 'object' && typeof module !== 'undefined') {
     getWebGLContext : getWebGLContext,
     loadShader : loadShader
   }
-} else {
-  // export to global
-  window.setupWebGL = setupWebGL;
-  window.createProgram = loadProgram;
-  window.createShaderFromScriptElement = createShaderFromScript;
-  window.getWebGLContext = getWebGLContext;
-  window.loadShader = loadShader;
 }
+
+// export to global
+window.setupWebGL = setupWebGL;
+window.createProgram = loadProgram;
+window.createShaderFromScriptElement = createShaderFromScript;
+window.getWebGLContext = getWebGLContext;
+window.loadShader = loadShader;
 
 }());
