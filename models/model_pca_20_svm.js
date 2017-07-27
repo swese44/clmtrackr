@@ -633,8 +633,6 @@
     }
     // But always support CommonJS module 1.1.1 spec (`exports` cannot be a function)
     exports.pModel = pModel;
-  } else {
-    // No CommonJS or Node.js module support, export to the global (window)
-    global.pModel = pModel;
   }
+  window.pModel = pModel;
 })(this);
